@@ -876,3 +876,110 @@
         display: none !important;
     }
 }
+
+/* ==========================================
+   ESTILOS PARA GALERÍA DE PRODUCTOS
+   ========================================== */
+
+/* Estilos para las etiquetas de precio */
+.precio-tag {
+    background: linear-gradient(135deg, #76ff03, #64dd17) !important;
+    color: #0a1128 !important;
+    padding: 8px 15px !important;
+    border-radius: 25px !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    box-shadow: 0 4px 15px rgba(118, 255, 3, 0.3) !important;
+}
+
+/* Botón de WhatsApp en productos */
+.btn-whatsapp-producto {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp-producto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+    background: linear-gradient(135deg, #128C7E, #075E54);
+}
+
+.btn-whatsapp-producto i {
+    font-size: 1.3rem;
+}
+
+/* Mejorar la visualización de imágenes */
+.gallery-image img {
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item-premium:hover .gallery-image img {
+    transform: scale(1.05);
+}
+
+/* Ajustar el overlay para productos */
+.gallery-overlay {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-item-premium:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Etiqueta de disponibilidad */
+.gallery-tags span:not(.precio-tag) {
+    background: rgba(118, 255, 3, 0.2);
+    color: #76ff03;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #76ff03;
+}
+
+/* Responsive: Ajustar en móviles */
+@media (max-width: 768px) {
+    .btn-whatsapp-producto {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .precio-tag {
+        font-size: 1rem !important;
+        padding: 6px 12px !important;
+    }
+}
+
+/* Animación de entrada para productos */
+@keyframes fadeInUpProduct {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gallery-item-premium[data-category] {
+    animation: fadeInUpProduct 0.6s ease forwards;
+}

@@ -134,84 +134,6 @@
             <p>Scroll</p>
         </div>
     </section>
-
-    <!-- Sobre Nosotros -->
-    <section id="sobre-nosotros" class="section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-label">Conócenos</span>
-                <h2>Expertos en Ciclismo desde 2014</h2>
-                <div class="underline">
-                    <span class="underline-animated"></span>
-                </div>
-                <p class="section-description">Somos Toledo Bikes, el taller de referencia en San Pedro de la Paz para ciclistas exigentes que buscan calidad y profesionalismo</p>
-            </div>
-            <div class="about-content">
-                <div class="about-grid">
-                    <div class="about-card glass-effect" data-aos="fade-right" data-aos-delay="200">
-                        <div class="about-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3>Nuestra Misión</h3>
-                        <p>Mantener cada bicicleta en su máximo rendimiento, brindando un servicio técnico de excelencia que supere las expectativas de nuestros clientes.</p>
-                    </div>
-                    <div class="about-card glass-effect" data-aos="fade-up" data-aos-delay="400">
-                        <div class="about-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <h3>Nuestra Pasión</h3>
-                        <p>Más que un taller, somos ciclistas apasionados. Entendemos la conexión entre el rider y su bicicleta, y trabajamos para fortalecerla.</p>
-                    </div>
-                    <div class="about-card glass-effect" data-aos="fade-left" data-aos-delay="600">
-                        <div class="about-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h3>Profesionalismo</h3>
-                        <p>Mecánicos certificados con formación continua en las últimas tecnologías de ciclismo tradicional y MTB.</p>
-                    </div>
-                </div>
-                <div class="stats-premium" data-aos="fade-up" data-aos-delay="800">
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h3 class="counter" data-target="5000">0</h3>
-                            <p>Reparaciones Exitosas</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h3 class="counter" data-target="2500">0</h3>
-                            <p>Clientes Satisfechos</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h3 class="counter" data-target="10">0</h3>
-                            <p>Años de Experiencia</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h3>4.9<span class="stat-decimal">/5</span></h3>
-                            <p>Valoración Promedio</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Servicios -->
     <section id="servicios" class="section bg-dark-gradient">
         <div class="container">
@@ -386,16 +308,7 @@
                                 <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678" required>
                                 <span class="form-bar"></span>
                             </div>
-
-                            <div class="form-group-premium">
-                                <label for="email">
-                                    <i class="fas fa-envelope"></i>
-                                    Correo Electrónico
-                                </label>
-                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                                <span class="form-bar"></span>
-                            </div>
-
+                          
                             <div class="form-group-premium">
                                 <label for="tipoBicicleta">
                                     <i class="fas fa-bicycle"></i>
@@ -490,9 +403,9 @@
                         <p>Mayoría de servicios listos en 24-48 hrs</p>
                     </div>
                     <div class="benefit-card">
-                        <i class="fas fa-certificate"></i>
-                        <h4>Mecánicos Certificados</h4>
-                        <p>Equipo con certificación internacional</p>
+                        <i class="fas fa-circle-notch"></i>
+                        <h4>Neumáticos Certificados</h4>
+                        <p>Solo productos de calidad garantizada</p>
                     </div>
                     <div class="benefit-card">
                         <i class="fas fa-hand-holding-usd"></i>
@@ -504,138 +417,208 @@
         </div>
     </section>
 
-    <!-- Galería -->
+    <!-- Galería de Productos -->
     <section id="galeria" class="section bg-pattern">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-label">Nuestro Trabajo</span>
-                <h2>Galería de Proyectos</h2>
+                <span class="section-label">Nuestros Productos</span>
+                <h2>Catálogo de Productos</h2>
                 <div class="underline">
                     <span class="underline-animated"></span>
                 </div>
-                <p class="section-description">Algunos de nuestros trabajos más recientes y destacados</p>
+                <p class="section-description">Encuentra los mejores repuestos y accesorios para tu bicicleta</p>
             </div>
+            
+            <!-- FILTROS DE CATEGORÍAS -->
             <div class="gallery-filter" data-aos="fade-up" data-aos-delay="200">
                 <button class="filter-btn active" data-filter="all">
-                    <i class="fas fa-th"></i> Todo
+                    <i class="fas fa-th"></i> Todos
                 </button>
-                <button class="filter-btn" data-filter="mtb">
-                    <i class="fas fa-mountain"></i> MTB
+                <button class="filter-btn" data-filter="repuestos">
+                    <i class="fas fa-cogs"></i> Repuestos
                 </button>
-                <button class="filter-btn" data-filter="ruta">
-                    <i class="fas fa-road"></i> Ruta
+                <button class="filter-btn" data-filter="accesorios">
+                    <i class="fas fa-shopping-bag"></i> Accesorios
+                </button>
+                <button class="filter-btn" data-filter="bicicletas">
+                    <i class="fas fa-bicycle"></i> Bicicletas
                 </button>
             </div>
+
+            <!-- GALERÍA DE PRODUCTOS -->
             <div class="gallery-grid-masonry">
-                <div class="gallery-item-premium" data-category="mtb" data-aos="zoom-in" data-aos-delay="100">
+                
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 1 - REPUESTO
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="repuestos" data-aos="zoom-in" data-aos-delay="100">
                     <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/freno-shimano.png" alt="Freno Shimano Deore" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h4>MTB Full Suspension</h4>
-                                <p>Mantenimiento completo + upgrade</p>
+                                <h4>Freno Shimano Deore</h4>
+                                <p>Sistema hidráulico de alta calidad</p>
                                 <div class="gallery-tags">
-                                    <span><i class="fas fa-tools"></i> Mantenimiento</span>
-                                    <span><i class="fas fa-mountain"></i> MTB</span>
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $45.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
                                 </div>
                             </div>
-                            <button class="gallery-zoom">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <div class="gallery-placeholder">
-                            <i class="fas fa-bicycle"></i>
-                            <p>MTB después de servicio premium</p>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20Freno%20Shimano%20Deore" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item-premium" data-category="ruta" data-aos="zoom-in" data-aos-delay="200">
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 2 - ACCESORIO
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="accesorios" data-aos="zoom-in" data-aos-delay="200">
                     <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/Casco.png" alt="Casco Specialized" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h4>Bicicleta de Ruta</h4>
-                                <p>Ajuste de transmisión profesional</p>
+                                <h4>Casco Specialized Align II</h4>
+                                <p>Protección certificada y diseño aerodinámico</p>
                                 <div class="gallery-tags">
-                                    <span><i class="fas fa-cogs"></i> Transmisión</span>
-                                    <span><i class="fas fa-road"></i> Ruta</span>
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $35.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
                                 </div>
                             </div>
-                            <button class="gallery-zoom">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <div class="gallery-placeholder">
-                            <i class="fas fa-tools"></i>
-                            <p>Ajuste fino de transmisión</p>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20Casco%20Specialized%20Align%20II" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item-premium" data-category="mtb" data-aos="zoom-in" data-aos-delay="300">
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 3 - BICICLETA
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="bicicletas" data-aos="zoom-in" data-aos-delay="300">
                     <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/marlin7.png" alt="MTB Trek Marlin 7" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h4>Sistema de Frenos</h4>
-                                <p>Instalación frenos hidráulicos</p>
+                                <h4>MTB Trek Marlin 7</h4>
+                                <p>Bicicleta de montaña con suspensión RockShox</p>
                                 <div class="gallery-tags">
-                                    <span><i class="fas fa-hand-paper"></i> Frenos</span>
-                                    <span><i class="fas fa-star"></i> Premium</span>
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $850.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
                                 </div>
                             </div>
-                            <button class="gallery-zoom">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <div class="gallery-placeholder">
-                            <i class="fas fa-cog"></i>
-                            <p>Frenos de disco hidráulicos</p>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20MTB%20Trek%20Marlin%207" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item-premium" data-category="mtb" data-aos="zoom-in" data-aos-delay="200">
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 4 - REPUESTO
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="repuestos" data-aos="zoom-in" data-aos-delay="100">
                     <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/cadena.png" alt="Cadena SRAM" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h4>Taller en Acción</h4>
-                                <p>Nuestro equipo trabajando</p>
+                                <h4>Cadena SRAM PC-1110</h4>
+                                <p>Cadena 11 velocidades para MTB y Ruta</p>
                                 <div class="gallery-tags">
-                                    <span><i class="fas fa-users"></i> Equipo</span>
-                                    <span><i class="fas fa-wrench"></i> Trabajo</span>
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $25.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
                                 </div>
                             </div>
-                            <button class="gallery-zoom">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <div class="gallery-placeholder">
-                            <i class="fas fa-wrench"></i>
-                            <p>Equipo profesional</p>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20Cadena%20SRAM%20PC-1110" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item-premium" data-category="ruta" data-aos="zoom-in" data-aos-delay="300">
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 5 - ACCESORIO
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="accesorios" data-aos="zoom-in" data-aos-delay="200">
                     <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/Luces-LED.png" alt="Luces LED" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h4>Cliente Satisfecho</h4>
-                                <p>Entrega de bicicleta restaurada</p>
+                                <h4>Set Luces LED Recargables</h4>
+                                <p>Iluminación frontal y trasera USB</p>
                                 <div class="gallery-tags">
-                                    <span><i class="fas fa-smile"></i> Cliente</span>
-                                    <span><i class="fas fa-star"></i> 5 Estrellas</span>
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $18.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
                                 </div>
                             </div>
-                            <button class="gallery-zoom">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <div class="gallery-placeholder">
-                            <i class="fas fa-star"></i>
-                            <p>Cliente feliz</p>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20Set%20Luces%20LED%20Recargables" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 6 - REPUESTO
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="repuestos" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/Neumático.png" alt="Neumático Schwalbe" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Neumático Schwalbe Racing Ralph</h4>
+                                <p>29" x 2.25 para MTB Trail/XC</p>
+                                <div class="gallery-tags">
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $38.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20Neumático%20Schwalbe%20Racing%20Ralph" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========================================
+                     ✅ PARA AGREGAR MÁS PRODUCTOS:
+                     Copia desde aquí ↓
+                     ======================================== -->
+                <!--
+                <div class="gallery-item-premium" data-category="CATEGORIA" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-image">
+                        <img src="imagenes/productos/TU-IMAGEN.jpg" alt="Nombre Producto" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>NOMBRE DEL PRODUCTO</h4>
+                                <p>Descripción breve del producto</p>
+                                <div class="gallery-tags">
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $XX.XXX</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20NOMBRE%20DEL%20PRODUCTO" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!-- Hasta aquí ↑ -->
+
             </div>
         </div>
     </section>
@@ -664,7 +647,7 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <p class="testimonial-text">
-                        "Excelente servicio profesional. Llevé mi MTB con problemas en la suspensión y cambios, y el equipo de Toledo me sorprendió con su conocimiento técnico y atención al detalle. La bicicleta quedó como nueva, incluso mejor que cuando la compré. 100% recomendados."
+                        “Excelente servicio y muy profesionales. Llevé mi MTB con problemas en la suspensión y los cambios, y el equipo de Toledo me impresionó por su conocimiento y atención al detalle. La bicicleta quedó como nueva. ¡100% recomendados!”
                     </p>
                     <div class="testimonial-author-premium">
                         <div class="author-avatar">
@@ -692,7 +675,7 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <p class="testimonial-text">
-                        "Llevo mi bicicleta urbana a Toledo hace 2 años y siempre me han atendido de maravilla. Son los mejores en San Pedro de la Paz para mantenimiento profesional. Precios justos, trabajo impecable y siempre me explican todo con paciencia. Mi taller de confianza."
+                        "Llevo mi bicicleta a Toledo hace 2 años y siempre me han atendido de maravilla. Son los mejores en San Pedro de la Paz para mantenimiento profesional. Precios justos, trabajo impecable y siempre me explican todo con paciencia. Mi taller de confianza."
                     </p>
                     <div class="testimonial-author-premium">
                         <div class="author-avatar">
@@ -700,7 +683,7 @@
                         </div>
                         <div class="author-info">
                             <strong>María González</strong>
-                            <span><i class="fas fa-bicycle"></i> Ciclista Urbana</span>
+                            <span><i class="fas fa-bicycle"></i> Ciclista de Concepción</span>
                             <div class="verified-badge">
                                 <i class="fas fa-check-circle"></i> Cliente Verificado
                             </div>
@@ -720,7 +703,7 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <p class="testimonial-text">
-                        "Me salvaron antes de una competencia importante. Mi bicicleta de ruta tenía problemas con el sistema de cambios y me la arreglaron en tiempo récord con servicio express. Quedó perfecta y pude competir sin problemas. Profesionalismo de primer nivel."
+                        “Me salvaron antes de una competencia importante. Mi bicicleta de ruta tenía problemas con los cambios y me la repararon en tiempo récord con el servicio express. Quedó impecable y pude competir sin ningún problema."
                     </p>
                     <div class="testimonial-author-premium">
                         <div class="author-avatar">
@@ -773,7 +756,7 @@
                         </div>
                         <h4>Ubicación</h4>
                         <p>Calle Colo Colo #35</p>
-                        <p>San Pedro de la Paz (4130081)</p>
+                        <p>San Pedro de la Paz</p>
                         <a href="https://www.google.com/maps/search/?api=1&query=Colo+Colo+35+San+Pedro+de+la+Paz" target="_blank" class="contact-link">
                             Ver en Google Maps <i class="fas fa-external-link-alt"></i>
                         </a>
@@ -785,7 +768,7 @@
                         </div>
                         <h4>Horario de Atención</h4>
                         <div class="schedule">
-                            <p><strong>Lunes a Viernes:</strong> 9:00 - 19:00</p>
+                            <p><strong>Lunes a Viernes:</strong> 10:00 - 19:00</p>
                             <p><strong>Sábados:</strong> 10:00 - 14:00</p>
                             <p><strong>Domingos:</strong> Cerrado</p>
                         </div>
@@ -796,8 +779,8 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <h4>Teléfono</h4>
-                        <a href="tel:+56912345678" class="contact-phone">
-                            +56 9 1234 5678
+                        <a href="tel:+56945675529" class="contact-phone">
+                            +56 9 4567 5529
                         </a>
                         <p class="contact-small">Llamadas y WhatsApp</p>
                     </div>
