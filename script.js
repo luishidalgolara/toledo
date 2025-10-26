@@ -303,7 +303,19 @@ ${formData.descripcion}
 
             // Número de WhatsApp del taller
             const numeroWhatsApp = '56945675529';
-            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            
+            // Detectar si es dispositivo móvil
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            
+            // Usar URL correcta según el dispositivo
+            let urlWhatsApp;
+            if (isMobile) {
+                // Para móviles: usar api.whatsapp.com (abre la app directamente)
+                urlWhatsApp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensaje)}`;
+            } else {
+                // Para PC: usar wa.me (funciona con WhatsApp Web y Desktop)
+                urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            }
 
             // Abrir WhatsApp
             window.open(urlWhatsApp, '_blank');
