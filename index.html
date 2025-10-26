@@ -55,6 +55,7 @@
                 rgba(0, 0, 0, 0.3) 100%
             );
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* FIX Safari iOS */
             border-radius: 25px;
             border: 1px solid rgba(139, 255, 58, 0.15);
             box-shadow: 
@@ -116,6 +117,7 @@
                 0 8px 32px rgba(0, 0, 0, 0.3),
                 inset 0 1px 0 rgba(255, 255, 255, 0.1);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* FIX Safari iOS */
             cursor: pointer;
             z-index: 1; /* Asegurar que las fotos estén sobre el fondo del mosaico */
         }
@@ -150,10 +152,14 @@
         
         /* Imagen dentro del contenedor */
         .mosaic-photo img {
+            position: absolute; /* FIX Safari iOS */
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* FIX Safari iOS */
         }
         
         /* Overlay con gradiente */
@@ -172,6 +178,7 @@
             opacity: 0.6;
             transition: opacity 0.4s ease;
             z-index: 1;
+            -webkit-transition: opacity 0.4s ease; /* FIX Safari iOS */
         }
         
         /* Estados hover */
@@ -181,6 +188,7 @@
                 0 12px 40px rgba(0, 0, 0, 0.4),
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
             transform: translateY(-8px) scale(1.02);
+            -webkit-transform: translateY(-8px) scale(1.02); /* FIX Safari iOS */
         }
         
         .mosaic-photo:hover::before {
@@ -189,6 +197,7 @@
         
         .mosaic-photo:hover img {
             transform: scale(1.15) rotate(2deg);
+            -webkit-transform: scale(1.15) rotate(2deg); /* FIX Safari iOS */
         }
         
         /* Responsive Design */
@@ -369,6 +378,138 @@
                 font-size: 1.44rem !important;
             }
         }
+        
+        /* ============================================
+           FIX PARA MODO HORIZONTAL (LANDSCAPE) EN MÓVILES
+           ============================================ */
+        
+        /* Landscape en móviles y tablets pequeñas */
+        @media (max-height: 600px) and (orientation: landscape) {
+            /* Reducir altura del header */
+            .glass-header {
+                padding: 0.5rem 0 !important;
+            }
+            
+            /* Menú de navegación en landscape */
+            .nav-links {
+                max-height: 80vh !important;
+                overflow-y: auto !important;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            /* Links del menú más compactos */
+            .nav-links li a {
+                padding: 0.6rem 1rem !important;
+                font-size: 0.9rem !important;
+            }
+            
+            /* Hero más compacto en landscape */
+            .hero {
+                min-height: 100vh !important;
+                padding: 5rem 0 2rem !important;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem !important;
+                margin-bottom: 1rem !important;
+            }
+            
+            .hero-title-main {
+                font-size: 2.5rem !important;
+            }
+            
+            .hero-title-sub {
+                font-size: 1.3rem !important;
+            }
+            
+            .slogan {
+                font-size: 0.9rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+            
+            .hero-buttons {
+                gap: 0.8rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+            
+            .hero-buttons .btn {
+                padding: 0.6rem 1.2rem !important;
+                font-size: 0.85rem !important;
+            }
+            
+            .hero-stats {
+                gap: 1.5rem !important;
+            }
+            
+            .hero-stat {
+                padding: 0.8rem !important;
+            }
+            
+            .stat-number {
+                font-size: 1.5rem !important;
+            }
+            
+            .stat-label {
+                font-size: 0.7rem !important;
+            }
+            
+            /* Mosaico en landscape */
+            .hero-gallery-mosaic {
+                gap: 1rem !important;
+                padding: 1rem !important;
+            }
+            
+            .hero-badge {
+                padding: 0.4rem 0.8rem !important;
+                font-size: 0.75rem !important;
+            }
+            
+            /* Scroll indicator oculto en landscape */
+            .scroll-indicator {
+                display: none !important;
+            }
+        }
+        
+        /* Landscape específico para móviles pequeños */
+        @media (max-height: 450px) and (orientation: landscape) {
+            .hero {
+                padding: 4rem 0 1rem !important;
+            }
+            
+            .hero-layout {
+                gap: 2rem !important;
+            }
+            
+            .hero-content h1 {
+                font-size: 1.8rem !important;
+            }
+            
+            .hero-title-main {
+                font-size: 2.2rem !important;
+            }
+            
+            .hero-buttons {
+                flex-direction: row !important;
+            }
+            
+            .hero-stats {
+                flex-direction: row !important;
+                gap: 1rem !important;
+            }
+        }
+        
+        /* Landscape para tablets */
+        @media (min-width: 577px) and (max-width: 968px) and (orientation: landscape) {
+            .nav-links {
+                flex-direction: row !important;
+                gap: 1rem !important;
+            }
+            
+            .hero-layout {
+                grid-template-columns: 1fr 1fr !important;
+                gap: 2rem !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -451,7 +592,7 @@
                     <span class="hero-title-sub">Taller de Bicicletas</span>
                 </h1>
                 <p class="slogan" data-aos="fade-up" data-aos-delay="400">
-                    <span class="slogan-line">Excelencia en cada pedaleada</span>
+                    <span class="slogan-line">Excelencia en cada pedalada</span>
                     <span class="slogan-subtext">Mantenimiento profesional • Reparaciones especializadas • Servicio premium</span>
                 </p>
                 <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
@@ -682,7 +823,7 @@
                                     <i class="fas fa-phone"></i>
                                     Teléfono
                                 </label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="+56 9 4567 5529" required>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678" required>
                                 <span class="form-bar"></span>
                             </div>
                           
@@ -1279,7 +1420,7 @@
                             </div>
                         </form>
                         <div class="contact-info-footer">
-                            <p><i class="fas fa-phone"></i> +56 9 4567 5529</p>
+                            <p><i class="fas fa-phone"></i> +56 9 1234 5678</p>
                             <p><i class="fas fa-envelope"></i> contacto@toledobikes.cl</p>
                             <p><i class="fas fa-map-marker-alt"></i> Colo Colo #35, San Pedro de la Paz</p>
                         </div>
