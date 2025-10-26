@@ -264,7 +264,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = {
                 nombre: document.getElementById('nombre').value,
                 telefono: document.getElementById('telefono').value,
-                email: document.getElementById('email').value,
                 tipoBicicleta: document.getElementById('tipoBicicleta').value,
                 servicio: document.getElementById('servicio').value,
                 urgencia: document.getElementById('urgencia').value,
@@ -282,7 +281,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 👤 *Nombre:* ${formData.nombre}
 📞 *Teléfono:* ${formData.telefono}
-📧 *Email:* ${formData.email}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
 🔧 *DETALLES DEL SERVICIO*
@@ -304,7 +302,7 @@ ${formData.descripcion}
             `.trim();
 
             // Número de WhatsApp del taller
-            const numeroWhatsApp = '56912345678';
+            const numeroWhatsApp = '56945675529';
             const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
             // Abrir WhatsApp
