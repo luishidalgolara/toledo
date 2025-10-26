@@ -417,138 +417,208 @@
         </div>
     </section>
 
-    <!-- Galería -->
+    <!-- Galería de Productos -->
     <section id="galeria" class="section bg-pattern">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-label">Nuestro Trabajo</span>
-                <h2>Galería de Proyectos</h2>
+                <span class="section-label">Nuestros Productos</span>
+                <h2>Catálogo de Productos</h2>
                 <div class="underline">
                     <span class="underline-animated"></span>
                 </div>
-                <p class="section-description">Algunos de nuestros trabajos más recientes y destacados</p>
+                <p class="section-description">Encuentra los mejores repuestos y accesorios para tu bicicleta</p>
             </div>
+            
+            <!-- FILTROS DE CATEGORÍAS -->
             <div class="gallery-filter" data-aos="fade-up" data-aos-delay="200">
                 <button class="filter-btn active" data-filter="all">
-                    <i class="fas fa-th"></i> Todo
+                    <i class="fas fa-th"></i> Todos
                 </button>
-                <button class="filter-btn" data-filter="mtb">
-                    <i class="fas fa-mountain"></i> MTB
+                <button class="filter-btn" data-filter="repuestos">
+                    <i class="fas fa-cogs"></i> Repuestos
                 </button>
-                <button class="filter-btn" data-filter="ruta">
-                    <i class="fas fa-road"></i> Ruta
+                <button class="filter-btn" data-filter="accesorios">
+                    <i class="fas fa-shopping-bag"></i> Accesorios
+                </button>
+                <button class="filter-btn" data-filter="bicicletas">
+                    <i class="fas fa-bicycle"></i> Bicicletas
                 </button>
             </div>
+
+            <!-- GALERÍA DE PRODUCTOS -->
             <div class="gallery-grid-masonry">
-                <div class="gallery-item-premium" data-category="mtb" data-aos="zoom-in" data-aos-delay="100">
+                
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 1 - REPUESTO
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="repuestos" data-aos="zoom-in" data-aos-delay="100">
                     <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/freno-shimano.png" alt="Freno Shimano Deore" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h4>MTB Full Suspension</h4>
-                                <p>Mantenimiento completo + upgrade</p>
+                                <h4>Freno Shimano Deore</h4>
+                                <p>Sistema hidráulico de alta calidad</p>
                                 <div class="gallery-tags">
-                                    <span><i class="fas fa-tools"></i> Mantenimiento</span>
-                                    <span><i class="fas fa-mountain"></i> MTB</span>
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $45.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
                                 </div>
                             </div>
-                            <button class="gallery-zoom">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <div class="gallery-placeholder">
-                            <i class="fas fa-bicycle"></i>
-                            <p>MTB después de servicio premium</p>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20Freno%20Shimano%20Deore" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item-premium" data-category="ruta" data-aos="zoom-in" data-aos-delay="200">
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 2 - ACCESORIO
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="accesorios" data-aos="zoom-in" data-aos-delay="200">
                     <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/Casco.png" alt="Casco Specialized" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h4>Bicicleta de Ruta</h4>
-                                <p>Ajuste de transmisión profesional</p>
+                                <h4>Casco Specialized Align II</h4>
+                                <p>Protección certificada y diseño aerodinámico</p>
                                 <div class="gallery-tags">
-                                    <span><i class="fas fa-cogs"></i> Transmisión</span>
-                                    <span><i class="fas fa-road"></i> Ruta</span>
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $35.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
                                 </div>
                             </div>
-                            <button class="gallery-zoom">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <div class="gallery-placeholder">
-                            <i class="fas fa-tools"></i>
-                            <p>Ajuste fino de transmisión</p>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20Casco%20Specialized%20Align%20II" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item-premium" data-category="mtb" data-aos="zoom-in" data-aos-delay="300">
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 3 - BICICLETA
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="bicicletas" data-aos="zoom-in" data-aos-delay="300">
                     <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/marlin7.png" alt="MTB Trek Marlin 7" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h4>Sistema de Frenos</h4>
-                                <p>Instalación frenos hidráulicos</p>
+                                <h4>MTB Trek Marlin 7</h4>
+                                <p>Bicicleta de montaña con suspensión RockShox</p>
                                 <div class="gallery-tags">
-                                    <span><i class="fas fa-hand-paper"></i> Frenos</span>
-                                    <span><i class="fas fa-star"></i> Premium</span>
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $850.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
                                 </div>
                             </div>
-                            <button class="gallery-zoom">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <div class="gallery-placeholder">
-                            <i class="fas fa-cog"></i>
-                            <p>Frenos de disco hidráulicos</p>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20MTB%20Trek%20Marlin%207" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item-premium" data-category="mtb" data-aos="zoom-in" data-aos-delay="200">
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 4 - REPUESTO
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="repuestos" data-aos="zoom-in" data-aos-delay="100">
                     <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/cadena.png" alt="Cadena SRAM" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h4>Taller en Acción</h4>
-                                <p>Nuestro equipo trabajando</p>
+                                <h4>Cadena SRAM PC-1110</h4>
+                                <p>Cadena 11 velocidades para MTB y Ruta</p>
                                 <div class="gallery-tags">
-                                    <span><i class="fas fa-users"></i> Equipo</span>
-                                    <span><i class="fas fa-wrench"></i> Trabajo</span>
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $25.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
                                 </div>
                             </div>
-                            <button class="gallery-zoom">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <div class="gallery-placeholder">
-                            <i class="fas fa-wrench"></i>
-                            <p>Equipo profesional</p>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20Cadena%20SRAM%20PC-1110" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item-premium" data-category="ruta" data-aos="zoom-in" data-aos-delay="300">
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 5 - ACCESORIO
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="accesorios" data-aos="zoom-in" data-aos-delay="200">
                     <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/Luces-LED.png" alt="Luces LED" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h4>Cliente Satisfecho</h4>
-                                <p>Entrega de bicicleta restaurada</p>
+                                <h4>Set Luces LED Recargables</h4>
+                                <p>Iluminación frontal y trasera USB</p>
                                 <div class="gallery-tags">
-                                    <span><i class="fas fa-smile"></i> Cliente</span>
-                                    <span><i class="fas fa-star"></i> 5 Estrellas</span>
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $18.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
                                 </div>
                             </div>
-                            <button class="gallery-zoom">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <div class="gallery-placeholder">
-                            <i class="fas fa-star"></i>
-                            <p>Cliente feliz</p>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20Set%20Luces%20LED%20Recargables" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- ========================================
+                     📦 EJEMPLO PRODUCTO 6 - REPUESTO
+                     ======================================== -->
+                <div class="gallery-item-premium" data-category="repuestos" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-image">
+                        <!-- AQUÍ VA TU IMAGEN (JPG o PNG) -->
+                        <img src="imagenes/Neumático.png" alt="Neumático Schwalbe" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Neumático Schwalbe Racing Ralph</h4>
+                                <p>29" x 2.25 para MTB Trail/XC</p>
+                                <div class="gallery-tags">
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $38.000</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20Neumático%20Schwalbe%20Racing%20Ralph" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========================================
+                     ✅ PARA AGREGAR MÁS PRODUCTOS:
+                     Copia desde aquí ↓
+                     ======================================== -->
+                <!--
+                <div class="gallery-item-premium" data-category="CATEGORIA" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-image">
+                        <img src="imagenes/productos/TU-IMAGEN.jpg" alt="Nombre Producto" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+                        
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>NOMBRE DEL PRODUCTO</h4>
+                                <p>Descripción breve del producto</p>
+                                <div class="gallery-tags">
+                                    <span class="precio-tag"><i class="fas fa-tag"></i> $XX.XXX</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/56945675529?text=Hola,%20me%20interesa%20el%20producto:%20NOMBRE%20DEL%20PRODUCTO" target="_blank" class="btn-whatsapp-producto">
+                                <i class="fab fa-whatsapp"></i> Consultar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!-- Hasta aquí ↑ -->
+
             </div>
         </div>
     </section>
